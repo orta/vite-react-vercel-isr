@@ -3,8 +3,9 @@ import { OtherFile } from "../src/OtherFile";
 import React from "react"
 
 export default async function handler() {
-  console.log("Start")
+  console.time("handler");
   const appHtml = renderToString(<OtherFile />);
+  console.timeEnd("handler");
   return new Response(appHtml, {
     status: 200,
   });
