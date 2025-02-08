@@ -6,7 +6,7 @@ export default async function handler() {
   console.time("handler");
   // const appHtml = renderToString(<OtherFile />);
   console.timeEnd("handler");
-  return new Response(appHtml, {
+  return new Response("asda", {
     status: 200,
   });
 }
