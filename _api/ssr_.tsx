@@ -4,7 +4,7 @@ import React from "react"
 
 export default async function handler() {
   console.time("handler");
-  const appHtml = renderToString(<OtherFile />);
+  // const appHtml = renderToString(<OtherFile />);
   console.timeEnd("handler");
   return new Response(appHtml, {
     status: 200,
